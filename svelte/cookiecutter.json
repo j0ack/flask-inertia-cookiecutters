@@ -1,0 +1,7 @@
+{
+    "project_slug": "app",
+    "app_file": "app",
+    "python_directory": "app",
+    "js_directory": "svelte",
+    "inertia_template_name": "base"
+}

@@ -1,0 +1,1 @@
+../../../vue3/{{ cookiecutter.project_slug }}/{{ cookiecutter.python_directory }}/{{ cookiecutter.app_file }}.py
