@@ -9,7 +9,7 @@ init:
 dev-python:
 	$(FLASK_DEV) flask run
 
-dev-vue:
+dev-js:
 	@npm run --prefix "static/{{ cookiecutter.js_directory }}" build:dev
 
-dev: dev-python dev-vue
+dev: dev-python dev-js
