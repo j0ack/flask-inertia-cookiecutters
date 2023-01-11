@@ -4,7 +4,7 @@ FLASK_DEV=FLASK_APP="{{ cookiecutter.python_directory }}.{{ cookiecutter.app_fil
 
 init:
 	pip install -r requirements.txt
-	cd "static/{{ cookiecutter.js_directory }}" && npm install
+	@npm --prefix "static/{{ cookiecutter.js_directory }}" install
 
 dev-python:
 	$(FLASK_DEV) flask run

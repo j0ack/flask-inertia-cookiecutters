@@ -10,9 +10,13 @@ This repository provides several cookiecutter templates using [directories](http
 It will create a minimal skeleton for a Flask application binded with Inertia
 thanks to Flask-Inertia Adapter with the following JS frameworks:
 
-* VueJS 3
+* VueJS 3 -- Vue CLI
   - TypeScript
   - WebPack config
+  - A `$route` plugin to access Flask defined routes from JavaScript
+* VueJS 3 -- Vite
+  - TypeScript
+  - Vite config
   - A `$route` plugin to access Flask defined routes from JavaScript
 * Svelte
   - TypeScript
@@ -22,7 +26,7 @@ thanks to Flask-Inertia Adapter with the following JS frameworks:
 
 ```
 pip install cookiecutter
-cookiecutter https://github.com/j0ack/flask-inertia-cookiecutters.git --directory=[vue3|svelte]
+cookiecutter https://github.com/j0ack/flask-inertia-cookiecutters.git --directory=[vue3-vue-cli|vue3-vite|svelte]
 ```
 
 You will be asked about your basic info that will be used in your project.
