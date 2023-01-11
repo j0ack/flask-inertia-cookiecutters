@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>{{ cookiecutter.project_slug }}</title>
+    <script lang="javascript">
+      {% raw %}
+      {{ inertia.include_router() }}
+      {% endraw %}
+    </script>
+  </head>
+  <body>
+    {% raw %}
+    <div id="app" data-page='{{ page | tojson }}'></div>
+    {% if config['ENV'] == 'development' %}
+      <script type="module" src="{{ url_for('static', filename='main.js') }}" defer></script>
+    {% else %}
+      <script type="module" src="{{ url_for('static', filename=manifest['src/main.ts'].file) }}"></script>
+    {% endif %}
+    {% endraw %}
+</html>
