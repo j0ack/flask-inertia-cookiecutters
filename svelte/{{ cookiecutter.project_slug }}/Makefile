@@ -1,1 +1,1 @@
-../../vue3/{{ cookiecutter.project_slug }}/Makefile
+../../vue3-vue-cli/{{ cookiecutter.project_slug }}/Makefile

@@ -1,1 +1,1 @@
-../../vue3/{{ cookiecutter.project_slug }}/requirements.txt
+../../vue3-vue-cli/{{ cookiecutter.project_slug }}/requirements.txt
