@@ -1,0 +1,26 @@
+{
+  "name": "{{ cookiecutter.project_slug }}",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "build:dev": "vite build --mode=development"
+  },
+  "dependencies": {
+    "@inertiajs/inertia": ">=0.11.1",
+    "@inertiajs/inertia-react": ">=0.8.1",
+    "@inertiajs/react": ">=1.2.0",
+    "react": ">=18.3.1",
+    "react-dom": ">=18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": ">=18.11.12",
+    "@types/react": ">=18.3.3",
+    "@types/react-dom": ">=18.3.0",
+    "@vitejs/plugin-react": ">=4.3.1",
+    "typescript": ">=4.7.4",
+    "vite": ">=4.0.0"
+  }
+}
