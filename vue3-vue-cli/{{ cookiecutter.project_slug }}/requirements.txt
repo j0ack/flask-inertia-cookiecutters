@@ -1,2 +1,1 @@
-Flask>=2.0.2
-flask_inertia>=0.4
+../../vue3-vite/{{ cookiecutter.project_slug }}/requirements.txt

@@ -1,6 +1,6 @@
 MAKEFLAGS+="-j 2"
 
-FLASK_DEV=FLASK_APP="{{ cookiecutter.python_directory }}.{{ cookiecutter.app_file }}:create_app('dev')" FLASK_ENV=development
+FLASK_DEV=FLASK_APP="{{ cookiecutter.python_directory }}.{{ cookiecutter.app_file }}:create_app('dev')" FLASK_DEBUG=1
 
 init:
 	pip install -r requirements.txt
