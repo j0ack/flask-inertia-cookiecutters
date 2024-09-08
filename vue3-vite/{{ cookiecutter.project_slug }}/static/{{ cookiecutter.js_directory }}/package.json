@@ -7,7 +7,7 @@
     "build": "run-p type-check build-only",
     "preview": "vite preview",
     "build-only": "vite build",
-    "build:dev": "vite build --mode=development",
+    "build:dev": "vite build --mode=development --watch",
     "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
