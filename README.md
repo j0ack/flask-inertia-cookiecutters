@@ -21,12 +21,14 @@ thanks to Flask-Inertia Adapter with the following JS frameworks:
 * Svelte
   - TypeScript
   - Rollup config
-
+* React
+  - TypeScript
+  - Vite config
 ## Use
 
 ```
 pip install cookiecutter
-cookiecutter https://github.com/j0ack/flask-inertia-cookiecutters.git --directory=[vue3-vue-cli|vue3-vite|svelte]
+cookiecutter https://github.com/j0ack/flask-inertia-cookiecutters.git --directory=[vue3-vue-cli|vue3-vite|svelte|react]
 ```
 
 You will be asked about your basic info that will be used in your project.
