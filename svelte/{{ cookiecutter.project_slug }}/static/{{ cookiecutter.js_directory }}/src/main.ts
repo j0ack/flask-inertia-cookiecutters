@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { createInertiaApp } from '@inertiajs/inertia-svelte'
+import { createInertiaApp } from '@inertiajs/svelte'
 
 const routes = {
   index: import('./pages/Index.svelte')

@@ -1,6 +1,6 @@
 import { createApp, h } from 'vue';
 import type { App } from 'vue';
-import { createInertiaApp } from '@inertiajs/inertia-vue3';
+import { createInertiaApp } from '@inertiajs/vue3';
 
 type StrOrNum = string | number
 
@@ -22,8 +22,8 @@ createInertiaApp({
     const page = await import(`./pages/${name}.vue`);
     return page.default;
   },
-  setup({ el, app, props, plugin }) {
-    const vueApp = createApp({ render: () => h(app, props) });
+  setup({ el, App, props, plugin }) {
+    const vueApp = createApp({ render: () => h(App, props) });
     vueApp.use(plugin);
     vueApp.use(routePlugin);
     vueApp.mount(el);
