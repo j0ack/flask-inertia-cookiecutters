@@ -1,12 +1,11 @@
 // @ts-nocheck
-import { createInertiaApp } from '@inertiajs/inertia-svelte'
-
-const routes = {
-  index: import('./pages/Index.svelte')
-}
+import { createInertiaApp } from '@inertiajs/svelte'
 
 createInertiaApp({
-  resolve: name => routes[name.toLowerCase()],
+  resolve: name => {
+    const pages = import.meta.glob('./pages/**/*.svelte', { eager: true })
+    return pages[`./pages/${name}.svelte`]
+  },
   setup({ el, App, props }) {
     new App({ target: el, props })
   },
