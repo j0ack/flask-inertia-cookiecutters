@@ -2,6 +2,7 @@
   "name": "{{ cookiecutter.project_slug }}",
   "version": "0.1.0",
   "private": true,
+  "type": "module",  
   "scripts": {
     "dev": "vite",
     "preview": "vite preview",
@@ -10,7 +11,6 @@
   },
   "dependencies": {
     "@inertiajs/inertia": ">=0.11.1",
-    "@inertiajs/inertia-react": ">=0.8.1",
     "@inertiajs/react": ">=1.2.0",
     "react": ">=18.3.1",
     "react-dom": ">=18.3.1"
