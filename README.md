@@ -20,7 +20,7 @@ thanks to Flask-Inertia Adapter with the following JS frameworks:
   - A `$route` plugin to access Flask defined routes from JavaScript
 * Svelte
   - TypeScript
-  - Rollup config
+  - Vite config
 * React
   - TypeScript
   - Vite config
